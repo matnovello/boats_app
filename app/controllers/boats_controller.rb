@@ -20,4 +20,8 @@ class BoatsController < ApplicationController
     @boat.save
     render "show.html.erb"
   end
+
+  def new
+    render "new.html.erb"
+  end
 end
