@@ -8,4 +8,16 @@ class BoatsController < ApplicationController
     @boat = Boat.find(params[:id])
     render "show.html.erb"
   end
+
+  def create
+    @boat = Boat.new({
+      name: params[:name],
+      color: params[:color],
+      price: params[:price],
+      year: params[:year],
+
+    })
+    @boat.save
+    render "show.html.erb"
+  end
 end
