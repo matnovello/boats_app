@@ -3,6 +3,7 @@
 <% @boats.each do | boat | %>
 
 <div>
+<a href="http://localhost:3000/boats/<%=boat.id%>">click for show</a>
 <p> name: <%= boat.name %></p>
 <p> color: <%= boat.color %></p>
 <p>price: <%= boat.price %></p>
