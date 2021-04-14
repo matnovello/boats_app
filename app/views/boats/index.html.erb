@@ -1,0 +1,14 @@
+<h1>Hello</h1>
+
+<% @boats.each do | boat | %>
+
+<div>
+<p> name: <%= boat.name %></p>
+<p> color: <%= boat.color %></p>
+<p>price: <%= boat.price %></p>
+<p>year: <%= boat.year %></p>
+</div>
+<hr>
+
+
+<% end %>
